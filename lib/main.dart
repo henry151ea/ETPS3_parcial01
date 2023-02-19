@@ -9,6 +9,7 @@ void main() {
 
 class Parcialtst extends StatelessWidget {
   const Parcialtst({super.key});
+  
 
   // This widget is the root of your application.
   @override
@@ -20,20 +21,12 @@ class Parcialtst extends StatelessWidget {
         appBar: AppBar(
         title: const Text("formulario")),
         body: 
-        Column(
-          children: [
-            principal(),
-            Container(
-                 color: Colors.amber,
-                 Text("sad"),
-            ),
-          ],
-        ),
+        
+        menunav()
         
       ),
     );
   }
 }
-
 
   
