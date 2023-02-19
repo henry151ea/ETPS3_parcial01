@@ -19,7 +19,7 @@ class Parcialtst extends StatelessWidget {
       title: 'Parcial_01',
       home: Scaffold(
         appBar: AppBar(
-        title: const Text("formulario")),
+        title: const Text("Parcial_01")),
         body: 
         
         menunav()

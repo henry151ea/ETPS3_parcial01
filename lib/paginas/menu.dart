@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:parcial_01/paginas/login.dart';
+import 'package:parcial_01/paginas/registro.dart';
 
 class menunav extends StatefulWidget {
   const menunav({super.key});
@@ -39,15 +40,11 @@ class _menunavState extends State<menunav> {
       ),
       body: <Widget>[
         _login(),
+        _registro(),
         Container(
-          color: Colors.green,
+          color: Color.fromARGB(255, 234, 252, 245),
           alignment: Alignment.center,
-          child: const Text('Page 2'),
-        ),
-        Container(
-          color: Colors.blue,
-          alignment: Alignment.center,
-          child: const Text('Page 3'),
+          child: const Text('Configuracion del sistema'),
         ),
       ][currentPageIndex],
     );
@@ -57,4 +54,8 @@ class _menunavState extends State<menunav> {
 Container _login(){
 return Container(child: principal());
 
+}
+
+Container _registro(){
+  return Container(child: registroUsuario());
 }
